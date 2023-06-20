@@ -1,65 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-
-
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Desiner.css">
+    <title>astro</title>
 </head>
 <body>
-  <main>
-    <div class="resume">
-      <div>
-        Entradas: R$
-        <span class="incomes">0.00</span>
-      </div>
-      <div>
-        Saídas: R$
-        <span class="expenses">0.00</span>
-      </div>
-      <div>
-        Total: R$
-        <span class="total">0.00</span>
-      </div>
+    <div class="main-content">
+        <div class="wrapping"><!--TAG CRIADA PARA MANIPULAR O CONTAINER E SEPARAR O MAIN CONTENT DO FOOTER-->
+            <main class="container">
+             <aside class="aside-container">
+                <div class="letter-content">
+                    <h1>Faça login<br>Tenha controle dos seus gastos</h1>
+                </div>
+                <figure class="image-content">
+                </figure>
+             </aside>
+            <div class="right">
+                <div class="login">
+                    <div class="log">
+                        <h1>LOGIN</h1>
+                    </div>
+                    <form id="login-form">
+                        <label for="usuario">Usuário</label>
+                        <input id="usuario" class="campo" name="usuario" type="text" autofocus>
+                        <label for="senha">Senha</label>
+                        <input id="senha" name="senha" class="campo" type="password" data-ls-module="charCounter" maxlength="20">
+                        <button type="submit">Logar agora</button>
+                    </form>
+                </div>
+            </div>
+        </main>
     </div>
-    <div class="newItem">
-      <div class="divDesc">
-        <label for="desc">Descrição</label>
-        <input type="text" id="desc" />
-      </div>
-      <div class="divAmount">
-        <label for="amount">Valor</label>
-        <input type="number" id="amount" />
-      </div>
-      <div class="divType">
-        <label for="type">Tipo</label>
-        <select id="type">
-          <option>Entrada</option>
-          <option>Saída</option>
-        </select>
-      </div>
-      <button id="btnNew">Incluir</button>
+    <div class="wrapping-footer">
+        <footer class="rodape">
+            <span>Developed by: Danilo Freitas</span>
+        </footer>
+        <div class="redes">
+            <a href="https://github.com/danh0602"><img src="assets/github.png" alt=""> GitHub</a>
+        </div>
     </div>
-    <div class="divTable">
-      <table>
-        <thead>
-          <tr>
-            <th>Descrição</th>
-            <th class="columnAmount">Valor</th>
-            <th class="columnType">Tipo</th>
-            <th class="columnAction"></th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
-  </main>  
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
